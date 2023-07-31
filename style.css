@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 132, 100, 1) 0%,
+        rgb(64, 185, 55)
+    );
+}
+h1{
+    margin-bottom: 15px;
+    font-size: 70px;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.card-body{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+.card-btn button{
+    color: white;
+    background-color: rgb(74, 74, 168);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: 1s;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="card-body">
+        <h1 id="title">0</h1>
+        <div class="card-btn">
+            <button id="decrement">Decrement</button>
+            <button id="reset">Reset</button>
+            <button id="increment">Increment</button>
+        </div>
+    </div>
+   </div>
+
+   <script>
+    const mainTitle = document.getElementById("title");
+    let curValue = 0;
+    const btnDecrement = document.getElementById("decrement");
+    const btnReset = document.getElementById("reset");
+    const btnIncrement = document.getElementById("increment");
+
+    btnIncrement.addEventListener("click",() => {
+        curValue++;
+        mainTitle.textContent = curValue;
+    });
+    btnDecrement.addEventListener("click",() => {
+        curValue--;
+        mainTitle.textContent = curValue;
+    });
+    btnReset.addEventListener("click",() => {
+        curValue = 0;
+        mainTitle.textContent = curValue;
+    });
+   </script>
+   
+</body>
+</html>
